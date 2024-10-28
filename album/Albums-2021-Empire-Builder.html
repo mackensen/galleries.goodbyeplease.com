@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photos - 2021 Empire Builder</title>
+      <link rel="stylesheet" href="../public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="../public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="../public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="../public/core.css" />
+      <link rel="stylesheet" href="../public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="../index.html">Photos</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="../index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Albums.html">Albums</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Albums-2021-Empire-Builder.html">2021 Empire Builder</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+    <a href="Albums-2021-Empire-Builder-New-York-to-Chicago.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/small/2021%20Empire%20Builder/New%20York%20to%20Chicago/Easton%20Transportation%20Center.jpg')">
+            <div class="info">
+              <h3>New York to Chicago</h3>
+              <div class="summary">44 photos</div>
+              <div class="date">12 Jun 2021 - 13 Jun 2021</div>
+            </div>
+          </a><a href="Albums-2021-Empire-Builder-Milwaukee-to-St-Paul.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/small/2021%20Empire%20Builder/Milwaukee%20to%20St%20Paul/Jackson%20at%20Juneau.jpg')">
+            <div class="info">
+              <h3>Milwaukee to St Paul</h3>
+              <div class="summary">41 photos</div>
+              <div class="date">13 Jun 2021 - 14 Jun 2021</div>
+            </div>
+          </a><a href="Albums-2021-Empire-Builder-Twin-Cities.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/small/2021%20Empire%20Builder/Twin%20Cities/Thick%20leaves.jpg')">
+            <div class="info">
+              <h3>Twin Cities</h3>
+              <div class="summary">30 photos</div>
+              <div class="date">15 Jun 2021 - 15 Jun 2021</div>
+            </div>
+          </a><a href="Albums-2021-Empire-Builder-St-Paul-to-Portland.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/small/2021%20Empire%20Builder/St%20Paul%20to%20Portland/North%20Dakotan%20horizon.jpg')">
+            <div class="info">
+              <h3>St Paul to Portland</h3>
+              <div class="summary">35 photos</div>
+              <div class="date">16 Jun 2021 - 17 Jun 2021</div>
+            </div>
+          </a><a href="Albums-2021-Empire-Builder-Seattle.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/small/2021%20Empire%20Builder/Seattle/Mount%20Rainier.jpg')">
+            <div class="info">
+              <h3>Seattle</h3>
+              <div class="summary">24 photos</div>
+              <div class="date">18 Jun 2021 - 19 Jun 2021</div>
+            </div>
+          </a>  </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+      <!--
+        Comments
+      -->
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <ul>
+          <li>&copy; 2023 Charles Fulton</li>
+          <li><a href="https://blog.goodbyeplease.com">Blog</a></li>
+          <li><a rel="me" href="https://higheredweb.social/@mackensen">Find me on Mastodon</a></li>
+        </ul>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="../public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="../public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="../public/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="../public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true,
+          fullScreen: true,
+          zoom: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photos - Home</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Photos</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+    <a href="album/Tags.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/media/small/2003%20Europe/Greetsiel/Canal%20in%20Greetsiel.JPG')">
+            <div class="info">
+              <h3>Tags</h3>
+              <div class="summary">760 albums, 5872 photos</div>
+              <div class="date">03 May 2003 - 18 Aug 2024</div>
+            </div>
+          </a><a href="album/Years.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/media/small/2003%20Europe/Greetsiel/Canal%20in%20Greetsiel.JPG')">
+            <div class="info">
+              <h3>Years</h3>
+              <div class="summary">17 albums, 2462 photos, 4 videos</div>
+              <div class="date">03 May 2003 - 18 Aug 2024</div>
+            </div>
+          </a><a href="album/Albums.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/media/small/2003%20Europe/Greetsiel/Canal%20in%20Greetsiel.JPG')">
+            <div class="info">
+              <h3>Albums</h3>
+              <div class="summary">53 albums, 2462 photos, 4 videos</div>
+              <div class="date">03 May 2003 - 18 Aug 2024</div>
+            </div>
+          </a>  </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+      <!--
+        Comments
+      -->
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <ul>
+          <li>&copy; 2023 Charles Fulton</li>
+          <li><a href="https://blog.goodbyeplease.com">Blog</a></li>
+          <li><a rel="me" href="https://higheredweb.social/@mackensen">Find me on Mastodon</a></li>
+        </ul>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true,
+          fullScreen: true,
+          zoom: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

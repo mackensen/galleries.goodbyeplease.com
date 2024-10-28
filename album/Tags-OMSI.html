@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photos - OMSI</title>
+      <link rel="stylesheet" href="../public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="../public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="../public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="../public/core.css" />
+      <link rel="stylesheet" href="../public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="../index.html">Photos</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="../index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Tags.html">Tags</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Tags-OMSI.html">OMSI</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+    <a href="Tags-OMSI-Southeast-Water-station.html" style="background-image: url('https://galleries-goodbyeplease.nyc3.digitaloceanspaces.com/small/2022%20West%20Coast/OMSI%20station.jpg')">
+            <div class="info">
+              <h3>Southeast Water station</h3>
+              <div class="summary">1 photo</div>
+              <div class="date">03 Apr 2022 - 03 Apr 2022</div>
+            </div>
+          </a>  </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+      <!--
+        Comments
+      -->
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <ul>
+          <li>&copy; 2023 Charles Fulton</li>
+          <li><a href="https://blog.goodbyeplease.com">Blog</a></li>
+          <li><a rel="me" href="https://higheredweb.social/@mackensen">Find me on Mastodon</a></li>
+        </ul>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="../public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="../public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="../public/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="../public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true,
+          fullScreen: true,
+          zoom: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
